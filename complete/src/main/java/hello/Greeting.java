@@ -10,7 +10,8 @@ public class Greeting {
     private int nMaxCount = 0;
     private char cMaxCountChar;
 
-    public Greeting(String content) {
+    public Greeting(String content) 
+    {
 
         this.strContent = content;
     }
@@ -24,6 +25,7 @@ public class Greeting {
 		{
 			return;
 		}
+		
 		String strLowerCaseData = strReplaceData.toLowerCase();
 		char[] stch = strLowerCaseData.toCharArray();
 		Arrays.sort(stch);
@@ -75,7 +77,8 @@ public class Greeting {
     	return this.nMaxCount;
     }
     
-    public String getContent() {
+    public String getContent() 
+    {
         return strReplaceData;
     }
 }

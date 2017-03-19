@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GreetingController {
+public class GreetingController
+{
 	private final String template = "The letters are: '%s'. The most frequent letter is '%c', and the frequency is %d";
-    private final AtomicLong counter = new AtomicLong();
 
-    //http://localhost:8080/Counting?inputStr=111wrewrWWS
-    @RequestMapping("/Counting")
+    //http://localhost:8080/counting?inputStr=111wrewrWWS
+    @RequestMapping("/")
     public String Counting(@RequestParam(value="inputStr") String inputStr)
     {
     	Greeting greeting = new Greeting(inputStr);
