@@ -10,7 +10,7 @@ public class GreetingController
 {
 	private final String template = "The letters are: '%s'. The most frequent letter is '%c', and the frequency is %d";
 
-    //http://localhost:8080/counting?inputStr=111wrewrWWS
+    //http://localhost:8080/?inputStr=111wrewrWWS
     @RequestMapping("/")
     public String Counting(@RequestParam(value="inputStr") String inputStr)
     {
